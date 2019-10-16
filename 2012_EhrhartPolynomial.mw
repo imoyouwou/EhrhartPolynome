@@ -1,3 +1,4 @@
+#Copy all these and paste in a MAPLE 13 worksheet and press "ENTER"
 mat:=proc(sy1,var1,li1) 
 local vart1,n1li1,Mli1,Mat1,con1,resu1;
 
@@ -349,3 +350,10 @@ end;
 end;
 #Vector(repp);
 rep1;end:
+#An example on how it works
+syst:=[2*x+y<=3*n,2*x+3*y*2*z>=2*m,z<=x];#x,y,n,m are nonnegative integers
+#enter
+syst:=[2*x+y-z-3*n,-2*x-3*y+2*z+2*m,z-x,-x,-y,-z,-m,-n]; listvar:=[x,y,z,m,n];nvar:=2;
+reparti([syst],[listvar],nvar);#then press "ENTER"
+
+
